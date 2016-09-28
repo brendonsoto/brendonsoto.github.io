@@ -1,0 +1,21 @@
+{{#extend "default"}}
+  {{#content "head" mode="append"}}
+    <link rel="stylesheet" href="assets/styles/jumbo.css" />
+  {{/content}}
+
+  {{#content "body"}}
+    <h1>I am replacing the original headline</h1>
+    <p>This is because we're using a content block without the <em>mode="append"</em> attribute.</p>
+    <article>
+    	<h2>I have now inserted an article</h2>
+    	<p>Look at me! I'm Mr. Interesting Article.</p>
+    </article>
+    <article>
+    	<h2>I am the second article</h2>
+    </article>
+  {{/content}}
+
+  {{#content "foot" mode="prepend"}}
+    <p>I am before the copy because the <em>mode</em> attribute was set to <em>prepend</em>.</p>
+  {{/content}}
+{{/extend}}
