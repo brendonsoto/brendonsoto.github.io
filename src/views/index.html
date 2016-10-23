@@ -1,21 +1,66 @@
-{{#extend "default"}}
+{{#extend "default" title="Brendon Soto | Portfolio" description="Brendon Soto's web developer portfolio"}}
 
   {{#content "body"}}
-    <article class="text-center" id="home">
-      <h1>Web Development with Passion</h1>
-      <p>Hi! I am a New York based web developer who loves exploring the front and back ends of the web. ADD MORE HERE. See my work <a href="#work">below</a>.</p>
+    <article class="row" id="home">
+      <div class="col-xs-12 text-center">
+        <h1>Web Development with Passion</h1>
+        <p>Hi! I am a New York based web developer. See my work <a href="#work">below</a>.</p>
+      </div>
     </article>
 
-    <article id="work">
-    	<h2>Work</h2>
+    <article class="row" id="work">
+      <div class="col-xs-12">
+        <h2>Work</h2>
+
+        {{#each projects}}
+          <section class="row">
+            <div class="col-xs-12">
+              <h3>{{title}}</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <img class="img-responsive" src="{{img}}" alt="{{imgAlt}}">
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <p>{{description}}</p>
+            </div>
+          </section>
+        {{/each}}
+      </div>
     </article>
 
-    <article id="about">
-    	<h2>About</h2>
+    <article class="row" id="about">
+      <div class="col-xs-12">
+        <h2>About</h2>
+        <h3>Skills</h3>
+        <table>
+          <tr>
+            <td>Languages</td>
+            <td>HTML, CSS, JavaScript, PHP, Python, Ruby, C#, Java, C/C++</td>
+          </tr>
+          <tr>
+            <td>Frameworks / Libraries</td>
+            <td>jQuery, Bootstrap, Laravel, Slim, Handlebars, NodeJS, Gulp, Mocha, Chai, WebdriverIO, Django</td>
+          </tr>
+          <tr>
+            <td>Databases</td>
+            <td>MySQL, MongoDB</td>
+          </tr>
+          <tr>
+            <td>Other</td>
+            <td>Git, SVN, Heroku, AWS, Agile</td>
+          </tr>
+        </table>
+        <h3>Education</h3>
+        <p><strong>New York University</strong> | Music Technology</p>
+        <p><span>How did you go from music to web development?</span>I was lucky enough that my program was a nice mix of music, electronics, and computer science. There was quite a bit of freedom to carve out your own specialization within music. From there I honed in more on the crossover between music and technology. Aaaaand that's kind of how I got into programming/web development.</p>
+      </div>
     </article>
 
-    <article id="contact">
-    	<h2>Contact</h2>
+    <article class="row" id="contact">
+      <div class="col-xs-12">
+        <h2>Contact</h2>
+        <p>I'd love to help bring ideas to the web. Send me a message at <a href="mailto:brendon.soto@gmail.com">brendon.soto@gmail.com</a>.</p>
+      </div>
     </article>
   {{/content}}
 

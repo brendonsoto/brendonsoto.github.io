@@ -1,6 +1,10 @@
 module.exports = function(gulp, plugins, paths) {
+  var fs = require('fs');
+
   return function() {
-    var templateData = {},
+    var templateData = {
+      projects: JSON.parse(fs.readFileSync('src/data/projects.json', 'utf8'))
+    },
         options = {
            batch: paths.src.partials
         };
