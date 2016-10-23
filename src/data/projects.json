@@ -3,7 +3,8 @@
     "title": "Diabetes Sight Risk",
     "url": "http://www.diabetessightrisk.com",
     "description": "Diabetes Sight Risk is a website detailing the effects of diabetes on your eyes and possible treatments.",
-    "image": "",
+    "img": "/assets/images/dsr_home.jpg",
+    "alt": "DiabetesSightRisk.com home page",
     "tags": [
       "PHP",
       "CSS",

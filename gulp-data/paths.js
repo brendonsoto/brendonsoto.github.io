@@ -1,8 +1,8 @@
 module.exports = {
   src: {
     // Add any extra partials directories to the HTML & partials arrays below
-    html: ['src/views/**/*.html', '!src/views/partials/**', '!src/views/layouts/**', 'src/data/projects.json'], 
-    handlebars: ['src/views/**/*.html', 'src/views/partials/**', 'src/views/layouts/**'], 
+    html: ['src/views/**/*.html', '!src/views/partials/**', '!src/views/layouts/**'], 
+    handlebars: ['src/views/**/*.html', 'src/views/partials/**', 'src/views/layouts/**', 'src/data/projects.json'], 
     partials: ['src/views/partials', 'src/views/layouts'],
     scss: 'src/assets/styles/*.scss',
     js: 'src/assets/js/**/*.js',
