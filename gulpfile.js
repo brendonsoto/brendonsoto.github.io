@@ -6,7 +6,7 @@
 // Load plugins
 var gulp = require('gulp'),
     paths = require('./gulp-data/paths'),
-    plugins = require('gulp-load-plugins')({ pattern: '*' });
+    plugins = require('gulp-load-plugins')({ pattern: ['*', '!jshint'] });
 
 
 // Handlebars -- Register helpers

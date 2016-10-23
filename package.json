@@ -29,7 +29,7 @@
     "gulp-uglify": "^2.0.0",
     "gulp-w3cjs": "^1.2.0",
     "gulp-watch": "^4.3.9",
-    "jshint": "^2.9.3",
+    "jshint": "^2.9.4",
     "node-notifier": "^4.6.0",
     "through2": "^2.0.1",
     "wdio-mocha-framework": "^0.4.3",
