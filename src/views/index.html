@@ -1,79 +1,13 @@
 {{#extend "default" title="Brendon Soto | Portfolio" description="Brendon Soto's web developer portfolio"}}
 
   {{#content "body"}}
-    <header class="text-center" id="home">
-      <div>
-        <h1>Full Stack Developer</h1>
-        <p>Hi! I am a New York based web developer. See my work <a href="#work">below</a>.</p>
-      </div>
-    </header>
+    {{>header}}
 
-    <article class="row" id="work">
-      <div class="col-xs-12">
-        <h2>Work</h2>
+    {{>projects}}
 
-        <section class="row">
-          {{#each projects}}
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 project">
-              <h3><a href="{{url}}" target="_blank">{{title}}</a></h3>
-              <a href="{{url}}" target="_blank">
-                <img class="img-responsive" src="{{img}}" alt="{{imgAlt}}">
-              </a>
-              <p>{{description}}</p>
-              <ul class="list-inline">
-                {{#each tags}}
-                  <li>{{this}}</li>
-                {{/each}}
-              </ul>
-            </div>
-          {{/each}}
-        </section>
-      </div>
-    </article>
+    {{>about}}
 
-    <article class="row" id="about">
-      <div class="col-xs-12">
-        <h2>About</h2>
-        <section>
-          <h3>Skills</h3>
-          <table>
-            <tr>
-              <td>Languages</td>
-              <td>HTML, CSS, JavaScript, PHP, Python, Ruby, C#, Java, C/C++</td>
-            </tr>
-            <tr>
-              <td>Frameworks / Libraries</td>
-              <td>jQuery, Bootstrap, Laravel, Slim, Handlebars, NodeJS, Gulp, Mocha, Chai, WebdriverIO, Django</td>
-            </tr>
-            <tr>
-              <td>Databases</td>
-              <td>MySQL, MongoDB</td>
-            </tr>
-            <tr>
-              <td>Other</td>
-              <td>Git, SVN, Heroku, AWS, Agile</td>
-            </tr>
-          </table>
-        </section>
-        <section>
-          <h3>Education</h3>
-          <p><strong>New York University</strong> | Music Technology</p>
-        </section>
-        <section id="misc">
-          <h3>Misc.</h3>
-          <p><span>How did you go from music to web development?</span>I was lucky enough that my program was a nice mix of music, electronics, and computer science. There was quite a bit of freedom to carve out your own specialization within music. From there I honed in more on the crossover between music and technology exploring digital electronics with Arduinos, learning about manipulating audio with C, and creating music training tools with JS. Aaaaand that's kind of how I got into programming/web development.</p>
-          <p><span>What do you do in your free time?</span>Lately I've been trying to learn more about web development by exploring WebGL and 3D graphics through a course on Udacity. I'm always trying to learn something new in the ever-growing field of web development. Outside of development, I'm a lover of music (what a surprise Mr. Music Degree). I love sitting down with one of my few guitars and just jamming out or making electronic music. Additionally, I like making little electronic doo-dads here and there.</p>
-          <p><span>Where can I find other examples of your code?</span>You can find my gitlab account <a href="https://gitlab.com/brendon.soto">here</a>. The code I have up is mostly for development tools, but there are old projects there too and even the code for this site.</p>
-        </section>
-      </div>
-    </article>
-
-    <article class="row" id="contact">
-      <div class="col-xs-12 text-center">
-        <h2>Contact</h2>
-        <p>If you have an idea you want to see online send me a message at <a href="mailto:brendon.soto@gmail.com">brendon.soto@gmail.com</a>.</p>
-      </div>
-    </article>
+    {{>contact}}
   {{/content}}
 
 {{/extend}}

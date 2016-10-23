@@ -1,0 +1,22 @@
+<article class="row" id="work">
+  <div class="col-xs-12">
+    <h2>Work</h2>
+
+    <section class="row">
+      {{#each projects}}
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 project">
+          <h3><a href="{{url}}" target="_blank">{{title}}</a></h3>
+          <a href="{{url}}" target="_blank">
+            <img class="img-responsive" src="{{img}}" alt="{{imgAlt}}">
+          </a>
+          <p>{{description}}</p>
+          <ul class="list-inline">
+            {{#each tags}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      {{/each}}
+    </section>
+  </div>
+</article>
