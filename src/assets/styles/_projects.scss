@@ -1,0 +1,42 @@
+.project img {
+  margin-bottom: 10px;
+}
+
+.project .list-inline {
+  margin-left: 0;
+}
+
+.project li {
+  background: #7eb1dc;
+  border-radius: 5px;
+  color: #eee;
+  padding: 2px 8px;
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.project h3 a {
+  padding-bottom: 5px;
+  position: relative;
+  text-decoration: none;
+
+  &:after {
+    background: #23527c;
+    content: "";
+    height: 3px;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    transform: scaleX(0);
+    transition: .25s;
+  }
+
+  &:hover:after {
+    right: 0;
+    text-decoration: none;
+    transform: scaleX(1);
+  }
+}
