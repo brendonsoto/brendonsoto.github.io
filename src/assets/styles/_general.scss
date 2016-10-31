@@ -9,13 +9,18 @@ main {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 48px;
+  margin-top: 0;
 }
 
 h2 {
   font-size: 36px;
   margin-bottom: 20px;
   text-align: center;
+}
+
+p {
+  font-size: 16px;
 }
 
 article {
@@ -26,9 +31,13 @@ article:before,
 header:before {
   content: ' ';
   display: block;
-  height: 50px;
+  height: 100px;
   margin-top: -50px;
   visibility: hidden;
+}
+
+article:before {
+  height: 70px;
 }
 
 section + section {
@@ -36,4 +45,23 @@ section + section {
 }
 
 header {
+  background: url('../images/vim.jpg') 0 0 / cover no-repeat;
+  color: #eee;
+  margin: 0 -15px;
+  padding: 0 15px 70px;
+
+  p {
+    font-size: 18px;
+  }
+}
+
+/*===== Desktop =====*/
+@media (min-width: 768px) {
+  header {
+    padding-bottom: 100px;
+  }
+
+  header:before {
+    height: 150px;
+  }
 }

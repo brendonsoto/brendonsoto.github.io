@@ -1,5 +1,6 @@
 .project img {
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
+  max-height: 200px;
 }
 
 .project .list-inline {
@@ -11,7 +12,7 @@
   border-radius: 5px;
   color: #eee;
   padding: 2px 8px;
-  margin-right: 5px;
+  margin: 0 5px 10px 0;
 
   &:last-child {
     margin-right: 0;
@@ -19,6 +20,7 @@
 }
 
 .project h3 a {
+  display: block;
   padding-bottom: 5px;
   position: relative;
   text-decoration: none;
@@ -38,5 +40,12 @@
     right: 0;
     text-decoration: none;
     transform: scaleX(1);
+  }
+}
+
+/*===== Desktop =====*/
+@media (min-width: 768px) {
+  .project {
+    height: 450px;
   }
 }

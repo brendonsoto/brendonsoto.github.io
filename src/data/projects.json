@@ -1,10 +1,39 @@
 [
   {
+    "title": "2016 ASCO Votrient Panel",
+    "description": "A convention panel was constructed for the 2016 ASCO convention to gain insight on how doctors interact with their patients. This was achieved through a form which would display the cumulative results of the form through an animated graph on a separate screen.",
+    "img": "/assets/images/polling_panel.png",
+    "imgAlt": "Votrient Panel for the 2016 ASCO convention",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JS",
+      "jQuery",
+      "MySQL"
+    ],
+    "isNotSite": "true"
+  },
+  {
+    "title": "Quality Measures Comparison Tool",
+    "url": "https://www.thebloc.com/#az-quality-measure-comparison-tool",
+    "description": "The Quality Measures Comparison tool is a web and iPad application to provide a comparison of insurance companies based on the ranking of quality measures specific to diabetes.",
+    "img": "/assets/images/az_qmt.jpg",
+    "imgAlt": "Screenshot of the comparison tool on desktop and iPad.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JS",
+      "Angular",
+      "Cordova",
+      "D3"
+    ]
+  },
+  {
     "title": "Diabetes Sight Risk",
     "url": "http://www.diabetessightrisk.com",
     "description": "Diabetes Sight Risk is a website detailing the effects of diabetes on your eyes and possible treatments.",
     "img": "/assets/images/dsr_home.jpg",
-    "alt": "DiabetesSightRisk.com home page",
+    "imgAlt": "DiabetesSightRisk.com home page",
     "tags": [
       "PHP",
       "CSS",
@@ -16,13 +45,15 @@
     "title": "MerckEngage Tracker",
     "url": "https://www.merckengage.com/tracker-tools/benefits-of-my-diary",
     "description": "MerckEngage Tracker is a web application to assist people in tracking their weight, medicines, and blood sugar. My team at the time was responsible for providing this application to integrate into the MerckEngage site.",
-    "image": "",
+    "img": "/assets/images/merckengage.png",
+    "imgAlt": "Merckengage weight tracker screen",
     "tags": [
       "ASP.NET",
       "C#",
       "HTML",
       "CSS",
-      "JS"
+      "JS",
+      "MySQL"
     ]
   }
 ]
