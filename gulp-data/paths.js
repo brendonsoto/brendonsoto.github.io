@@ -13,7 +13,7 @@ module.exports = {
     data: 'src/assets/data/*'
   },
   dist: {
-    styles: 'docs/assets/styles',
-    js: 'docs/assets/js'
+    styles: './assets/styles',
+    js: './assets/js'
   }
 };

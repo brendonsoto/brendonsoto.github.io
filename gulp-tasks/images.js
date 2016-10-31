@@ -8,6 +8,6 @@ module.exports = function(gulp, plugins, paths) {
           )
         )
       )
-      .pipe(gulp.dest('docs'));
+      .pipe(gulp.dest('./'));
   };
 };
