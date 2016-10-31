@@ -1,7 +1,7 @@
 module.exports = function(gulp, plugins) {
   return function() {
     plugins.browserSync.init({
-      server: 'dist',
+      server: 'docs',
       files: [
         '**/*.css',
         '**/images/**'
