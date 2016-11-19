@@ -1,19 +1,22 @@
 module.exports = {
   src: {
     // Add any extra partials directories to the HTML & partials arrays below
-    html: ['src/views/**/*.html', '!src/views/partials/**', '!src/views/layouts/**'], 
+    data: 'src/assets/data/*',
+    fonts: 'src/assets/fonts/*',
     handlebars: ['src/views/**/*.html', 'src/views/partials/**', 'src/views/layouts/**', 'src/data/projects.json'], 
-    partials: ['src/views/partials', 'src/views/layouts'],
-    scss: 'src/assets/styles/*.scss',
+    html: ['src/views/**/*.html', '!src/views/partials/**', '!src/views/layouts/**'], 
+
+    images: 'src/assets/images/**/*',
+
     js: 'src/assets/js/**/*.js',
     jsCustom: ['src/assets/js/**/*.js', '!src/assets/js/vendor/**'],
     jsVendor: 'src/assets/js/vendor/**',
-    images: 'src/assets/images/**/*',
-    fonts: 'src/assets/fonts/*',
-    data: 'src/assets/data/*'
+    partials: ['src/views/partials', 'src/views/layouts'],
+    scss: 'src/assets/styles/*.scss'
   },
   dist: {
-    styles: './assets/styles',
-    js: './assets/js'
+    js: 'docs/assets/js',
+    root: 'docs',
+    styles: 'docs/assets/styles'
   }
 };

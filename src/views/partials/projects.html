@@ -1,24 +1,15 @@
 <article class="row" id="work">
   <div class="col-xs-12">
     <h2>Work</h2>
+    <p class="text-center">Screenshots are not provided due to company policy.</p>
 
     <section class="row">
       {{#each projects}}
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 project">
           {{#if isNotSite}}
-          <h3><a href="#project-modal" data-toggle="modal">{{title}}</a></h3>
+          <h3>{{title}}</h3>
           {{else}}
             <h3><a href="{{url}}" target="_blank">{{title}}</a></h3>
-          {{/if}}
-
-          {{#if isNotSite}}
-            <a href="#project-modal" data-toggle="modal">
-              <img class="img-responsive center-block" src="{{img}}" alt="{{imgAlt}}">
-            </a>
-          {{else}}
-            <a href="{{url}}" target="_blank">
-              <img class="img-responsive" src="{{img}}" alt="{{imgAlt}}">
-            </a>
           {{/if}}
 
           <p>{{description}}</p>
