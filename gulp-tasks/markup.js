@@ -13,6 +13,6 @@ module.exports = function(gulp, plugins, paths) {
       .pipe(plugins.compileHandlebars(templateData, options))
       .pipe(plugins.bootlint())		// Check if valid bootstrap
       .pipe(plugins.htmlmin({collapseWhitespace: true}))
-      .pipe(gulp.dest('dist'));
+      .pipe(gulp.dest(paths.dist.root));
   };
 };

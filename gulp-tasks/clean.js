@@ -1,5 +1,5 @@
-module.exports = function(gulp, plugins) {
+module.exports = function(gulp, plugins, paths) {
   return function() {
-    return plugins.del(['dist']);
+    return plugins.del([paths.dist.root]);
   };
 };

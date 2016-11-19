@@ -1,24 +1,20 @@
 [
   {
-    "title": "2016 ASCO Votrient Panel",
-    "description": "A convention panel was constructed for the 2016 ASCO convention to gain insight on how doctors interact with their patients. This was achieved through a form which would display the cumulative results of the form through an animated graph on a separate screen.",
-    "img": "/assets/images/polling_panel.png",
-    "imgAlt": "Votrient Panel for the 2016 ASCO convention",
+    "title": "Bunavail HCP Site",
+    "url": "https://bunavail.com/hcp",
+    "description": "The Bunavail HCP site provides information regarding a treatment option for opioid dependence. Handlebars was used to enable a modular approach in building the site while being able to compile to static HTML. Basic PHP was used to handle the contact form.",
     "tags": [
       "HTML",
       "CSS",
       "JS",
-      "jQuery",
-      "MySQL"
-    ],
-    "isNotSite": "true"
+      "Handlebars",
+      "PHP"
+    ]
   },
   {
     "title": "Quality Measures Comparison Tool",
     "url": "https://www.thebloc.com/#az-quality-measure-comparison-tool",
     "description": "The Quality Measures Comparison tool is a web and iPad application to provide a comparison of insurance companies based on the ranking of quality measures specific to diabetes.",
-    "img": "/assets/images/az_qmt.jpg",
-    "imgAlt": "Screenshot of the comparison tool on desktop and iPad.",
     "tags": [
       "HTML",
       "CSS",
@@ -32,8 +28,6 @@
     "title": "Diabetes Sight Risk",
     "url": "http://www.diabetessightrisk.com",
     "description": "Diabetes Sight Risk is a website detailing the effects of diabetes on your eyes and possible treatments.",
-    "img": "/assets/images/dsr_home.jpg",
-    "imgAlt": "DiabetesSightRisk.com home page",
     "tags": [
       "PHP",
       "CSS",
@@ -45,8 +39,6 @@
     "title": "MerckEngage Tracker",
     "url": "https://www.merckengage.com/tracker-tools/benefits-of-my-diary",
     "description": "MerckEngage Tracker is a web application to assist people in tracking their weight, medicines, and blood sugar. My team at the time was responsible for providing this application to integrate into the MerckEngage site.",
-    "img": "/assets/images/merckengage.png",
-    "imgAlt": "Merckengage weight tracker screen",
     "tags": [
       "ASP.NET",
       "C#",
